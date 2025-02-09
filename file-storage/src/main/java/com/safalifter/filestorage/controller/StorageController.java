@@ -15,10 +15,14 @@ public class StorageController {
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadImageToFIleSystem(@RequestPart("image") MultipartFile file) {
+<<<<<<< HEAD
     	if(true)
     	{
     		System.out.println();
     	}
+=======
+    	System.out.println();
+>>>>>>> origin/feature/dev1
         return ResponseEntity.ok().body(storageService.uploadImageToFileSystem(file));
     }
 
